@@ -16,5 +16,5 @@ let sashimiJson = [
     desc: '6 Unidades',
     price: 'R$: 56,00',
     img: 'sashimiP.jpeg'
-     },
+     }
   ]
