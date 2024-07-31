@@ -1,3 +1,4 @@
+let btn = document.querySelector('.navegation .a')
 const nav = document.querySelector('.navegation')
 const topNav = nav.offsetTop
 
@@ -18,6 +19,27 @@ function fixaTop() {
 }
 
 let c = (el) => document.querySelector(el)
+let cs = (el)=> document.querySelectorAll(el)
+
+window.onload = function() {
+  if (btn.classList.contains('active')) {
+    itemPromo.map((item, indez) => {
+      let promo = document.querySelector('.models .item-content').cloneNode(true)
+      
+      promo.querySelector('.item-name').innerHTML = item.name
+      promo.querySelector('.desc').innerHTML = item.desc
+      promo.querySelector('.item-price').innerHTML = item.price
+      promo.querySelector('.item-img img').src = item.img
+     
+      promo.style.opacity = 0
+      c('.area').append(promo)
+      setTimeout(() => {
+        promo.style.opacity = 1
+      }, 200)
+
+    })
+  }
+}
 
 document.querySelectorAll('.navegation a').forEach((item, index) => {
 
