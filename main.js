@@ -21,6 +21,7 @@ function fixaTop() {
 let c = (el) => document.querySelector(el)
 let cs = (el)=> document.querySelectorAll(el)
 
+
 window.onload = function() {
   if (btn.classList.contains('active')) {
     itemPromo.map((item, indez) => {
@@ -41,11 +42,11 @@ window.onload = function() {
   }
 }
 
+c
 document.querySelectorAll('.navegation a').forEach((item, index) => {
 
   item.addEventListener('click', (e) => {
     e.preventDefault()
-
 
 
     switch (index) {
@@ -66,26 +67,30 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
         c('.yaki').classList.remove('active')
         c('.sobre').classList.remove('active')
         c('.l').classList.remove('active')
-          e.target.classList.add('active')
+        item.classList.add('active')
 
         itemPromo.map((item, index) => {
+          let promo = document.querySelector('.models .item-content').cloneNode(true)
 
-          let prom = document.querySelector('.models .item-content').cloneNode(true)
+          promo.querySelector('.item-name').innerHTML = item.name
+          promo.querySelector('.desc').innerHTML = item.desc
+          promo.querySelector('.item-img img').src = item.img
+          promo.querySelector('.item-price').innerHTML = item.price
 
+          promo.style.opacity = 0
+          c('.area').append(promo)
+          setTimeout(() => {
+            promo.style.opacity = 1
+          }, 100)
 
-          prom.querySelector('.item-name').innerHTML = item.name
-          prom.querySelector('.desc').innerHTML = item.desc
-          prom.querySelector('.item-img img').src = item.img
-          prom.querySelector('.item-price').innerHTML = item.price
-
-          document.querySelector('.area').append(prom)
         })
         break;
       case 1:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.a').classList.remove('active')
+        c('.a').classList.remove('active')
         c('.c').classList.remove('active')
         c('.d').classList.remove('active')
         c('.e').classList.remove('active')
@@ -98,7 +103,7 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
         c('.yaki').classList.remove('active')
         c('.sobre').classList.remove('active')
         c('.l').classList.remove('active')
-          e.target.classList.add('active')
+        item.classList.add('active')
 
         entriesItem.map((item, index) => {
           let entri = document.querySelector('.models .item-content').cloneNode(true)
@@ -108,28 +113,33 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           entri.querySelector('.item-img img').src = item.img
           entri.querySelector('.item-price').innerHTML = item.price
 
-          document.querySelector('.area').append(entri)
+          entri.style.opacity = 0
+          c('.area').append(entri)
+          setTimeout(() => {
+            entri.style.opacity = 1
+          }, 100)
 
         })
         break;
       case 2:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         hossomakiJson.map((item, index) => {
           let hossoItem = c('.models .item-content').cloneNode(true)
@@ -139,27 +149,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           hossoItem.querySelector('.item-price').innerHTML = item.price
           hossoItem.querySelector('.item-img img').src = item.img
 
+          hossoItem.style.opacity = 0
           c('.area').append(hossoItem)
+          setTimeout(() => {
+            hossoItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 3:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         uramakiJson.map((item, index) => {
           let uramakiItem = c('.models .item-content').cloneNode(true)
@@ -169,27 +184,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           uramakiItem.querySelector('.item-price').innerHTML = item.price
           uramakiItem.querySelector('.item-img img').src = item.img
 
+          uramakiItem.style.opacity = 0
           c('.area').append(uramakiItem)
+          setTimeout(() => {
+            uramakiItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 4:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         niguiriJson.map((item, index) => {
           let niguiriItem = c('.models .item-content').cloneNode(true)
@@ -199,27 +219,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           niguiriItem.querySelector('.item-price').innerHTML = item.price
           niguiriItem.querySelector('.item-img img').src = item.img
 
+          niguiriItem.style.opacity = 0
           c('.area').append(niguiriItem)
+          setTimeout(() => {
+            niguiriItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 5:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         dyoJson.map((item, index) => {
           let dyoItem = c('.models .item-content').cloneNode(true)
@@ -229,28 +254,33 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           dyoItem.querySelector('.item-price').innerHTML = item.price
           dyoItem.querySelector('.item-img img').src = item.img
 
+          dyoItem.style.opacity = 0
           c('.area').append(dyoItem)
+          setTimeout(() => {
+            dyoItem.style.opacity = 1
+          }, 100)
 
         })
         break;
       case 6:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         sashimiJson.map((item, index) => {
           let sashimiItem = c('.models .item-content').cloneNode(true)
@@ -260,28 +290,33 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           sashimiItem.querySelector('.item-price').innerHTML = item.price
           sashimiItem.querySelector('.item-img img').src = item.img
 
+          sashimiItem.style.opacity = 0
           c('.area').append(sashimiItem)
+          setTimeout(() => {
+            sashimiItem.style.opacity = 1
+          }, 100)
 
         })
         break;
       case 7:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         temakiJson.map((item, index) => {
           let temakiItem = c('.models .item-content').cloneNode(true)
@@ -291,28 +326,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           temakiItem.querySelector('.item-price').innerHTML = item.price
           temakiItem.querySelector('.item-img img').src = item.img
 
+          temakiItem.style.opacity = 0
           c('.area').append(temakiItem)
-
+          setTimeout(() => {
+            temakiItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 8:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         combinadosJson.map((item, index) => {
           let combItem = c('.models .item-content').cloneNode(true)
@@ -322,27 +361,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           combItem.querySelector('.item-price').innerHTML = item.price
           combItem.querySelector('.item-img img').src = item.img
 
+          combItem.style.opacity = 0
           c('.area').append(combItem)
+          setTimeout(() => {
+            combItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 9:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         rollJson.map((item, index) => {
           let rollItem = c('.models .item-content').cloneNode(true)
@@ -352,27 +396,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           rollItem.querySelector('.item-price').innerHTML = item.price
           rollItem.querySelector('.item-img img').src = item.img
 
+          rollItem.style.opacity = 0
           c('.area').append(rollItem)
+          setTimeout(() => {
+            rollItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 10:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         quentesJson.map((item, index) => {
           let quentItem = c('.models .item-content').cloneNode(true)
@@ -382,27 +431,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           quentItem.querySelector('.item-price').innerHTML = item.price
           quentItem.querySelector('.item-img img').src = item.img
 
+          quentItem.style.opacity = 0
           c('.area').append(quentItem)
+          setTimeout(() => {
+            quentItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 11:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         yakiJson.map((item, index) => {
           let yakiItem = c('.models .item-content').cloneNode(true)
@@ -412,27 +466,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           yakiItem.querySelector('.item-price').innerHTML = item.price
           yakiItem.querySelector('.item-img img').src = item.img
 
+          yakiItem.style.opacity = 0
           c('.area').append(yakiItem)
+          setTimeout(() => {
+            yakiItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 12:
+
         c('.area').innerHTML = ''
         c('.area').style.display = ''
         c('.area').style.flexDirection = ''
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.a').classList.remove('active')
-            c('.l').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.a').classList.remove('active')
+        c('.l').classList.remove('active')
+        item.classList.add('active')
 
         sobreJson.map((item, index) => {
           let sobreItem = c('.models .item-content').cloneNode(true)
@@ -442,27 +501,32 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           sobreItem.querySelector('.item-price').innerHTML = item.price
           sobreItem.querySelector('.item-img img').src = item.img
 
+          sobreItem.style.opacity = 0
           c('.area').append(sobreItem)
+          setTimeout(() => {
+            sobreItem.style.opacity = 1
+          }, 100)
         })
         break;
       case 13:
+
         c('.area').innerHTML = ''
         c('.area').style.display = 'flex'
         c('.area').style.flexDirection = 'column'
-            c('.ent').classList.remove('active')
-            c('.c').classList.remove('active')
-            c('.d').classList.remove('active')
-            c('.e').classList.remove('active')
-            c('.f').classList.remove('active')
-            c('.g').classList.remove('active')
-            c('.h').classList.remove('active')
-            c('.i').classList.remove('active')
-            c('.j').classList.remove('active')
-            c('.k').classList.remove('active')
-            c('.yaki').classList.remove('active')
-            c('.sobre').classList.remove('active')
-            c('.a').classList.remove('active')
-            e.target.classList.add('active')
+        c('.ent').classList.remove('active')
+        c('.c').classList.remove('active')
+        c('.d').classList.remove('active')
+        c('.e').classList.remove('active')
+        c('.f').classList.remove('active')
+        c('.g').classList.remove('active')
+        c('.h').classList.remove('active')
+        c('.i').classList.remove('active')
+        c('.j').classList.remove('active')
+        c('.k').classList.remove('active')
+        c('.yaki').classList.remove('active')
+        c('.sobre').classList.remove('active')
+        c('.a').classList.remove('active')
+        item.classList.add('active')
         bebidasJson.map((item, index) => {
           let bebiItem = c('.models2 .item-content2').cloneNode(true)
 
@@ -470,7 +534,11 @@ document.querySelectorAll('.navegation a').forEach((item, index) => {
           bebiItem.querySelector('.drink-price').innerHTML = item.price
 
 
+          bebiItem.style.opacity = 0
           c('.area').append(bebiItem)
+          setTimeout(() => {
+            bebiItem.style.opacity = 1
+          }, 300)
         })
         break;
       default:
