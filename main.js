@@ -42,7 +42,7 @@ window.onload = function() {
   }
 }
 
-c
+
 document.querySelectorAll('.navegation a').forEach((item, index) => {
 
   item.addEventListener('click', (e) => {
