@@ -2,7 +2,7 @@ let niguiriJson = [
   {
     nome: 'NIGUIRI SALMÃO',
     desc: '(Dupla)',
-    price: 'R$: 15,00',
+    price: 'R$: 18,00',
     img: 'niguiriS.jpg'
    },
   {
