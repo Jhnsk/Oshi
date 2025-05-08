@@ -2,13 +2,13 @@ let quentesJson = [
   {
     nome: 'FRANGO XADREZ',
     desc: '',
-    price: 'R$: 60,00',
+    price: 'R$: 65,00',
     img: 'xadrez.jpeg'
    },
   {
     nome: 'TEPAN DE SALMÃO',
     desc: '',
-    price: 'R$: 68,90',
+    price: 'R$: 75,00',
     img: 'tepanS.jpeg'
     },
   {
@@ -20,13 +20,13 @@ let quentesJson = [
   {
     nome: 'TEPAN DE CAMARÃO',
     desc: '',
-    price: 'R$: 85,00',
+    price: 'R$: 95,00',
     img: 'tepanC.jpeg'
       },
   {
     nome: 'TEPAN FRUTOS DO MAR',
     desc: '',
-    price: 'R$: 95,00',
+    price: 'R$: 110,00',
     img: 'tepanM.jpeg'
        },
   ]
