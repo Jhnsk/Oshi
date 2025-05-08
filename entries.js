@@ -3,7 +3,7 @@ let entriesItem = [
   {
     nome: 'CEVICHE',
     desc: '',
-    price: 'R$: 49,90',
+    price: 'R$: 55,90',
     img: 'cevich.jpg'
 },
   {
@@ -16,13 +16,13 @@ let entriesItem = [
   {
     nome: 'SUNOMONO ESPECIAL',
     desc: '',
-    price: 'R$: 38,00',
+    price: 'R$: 45,90',
     img: 'sunomonoE.jpeg'
 },
   {
     nome: 'TARTAR DE SALMÃO',
     desc: '',
-    price: 'R$: 48,00',
+    price: 'R$: 58,00',
     img: 'tartarS.jpeg'
 },
   {
@@ -34,7 +34,7 @@ let entriesItem = [
   {
     nome: 'CARPACCIO DE SALMÃO TRUFADO',
     desc: '',
-    price: 'R$: 60,00',
+    price: 'R$: 75,00',
     img: 'CarSalmao.jpeg'
 },
   {
