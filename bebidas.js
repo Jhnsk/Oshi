@@ -2,27 +2,27 @@ let bebidasJson = [
 
   {
     nome: 'REFRIGERANTE LATA',
-    price: 'R$: 6,50'
+    price: 'R$: 8,00'
   },
   {
     nome: 'SCHWEPPES',
-    price: 'R$: 6,50'
+    price: 'R$: 8,00'
   },
   {
     nome: 'CITRUS',
-    price: 'R$: 6,50'
+    price: 'R$: 8,00'
   },
   {
     nome: 'ÁGUA',
-    price: 'R$: 3,00'
-  },
-  {
-    nome: 'ÁGUA C/ GÁS',
     price: 'R$: 3,50'
   },
   {
+    nome: 'ÁGUA C/ GÁS',
+    price: 'R$: 5,00'
+  },
+  {
     nome: 'HEINEKENS 600ml',
-    price: 'R$: 18,00'
+    price: 'R$: 19,00'
   },
   {
     nome: 'DEVASSA',
@@ -30,7 +30,7 @@ let bebidasJson = [
   },
   {
     nome: 'AMSTEL',
-    price: 'R$: 14,00'
+    price: 'R$: 15,00'
   },
   {
     nome: 'RED BULL',
@@ -38,39 +38,39 @@ let bebidasJson = [
   },
   {
     nome: 'SUCO DE LIMÃO',
-    price: 'R$: 5,50'
+    price: 'R$: 7,00'
   },
   {
     nome: 'SUCO DE LARANJA',
-    price: 'R$: 6,50'
+    price: 'R$: 8,00'
   },
   {
     nome: 'SUCO DE ABACAXI',
-    price: 'R$: 7,50'
+    price: 'R$: 8,00'
   },
   {
     nome: 'SUCO DE MARACUJÁ',
-    price: 'R$: 6,50'
+    price: 'R$: 8,00'
   },
   {
     nome: 'SUCO DE MORANGO',
-    price: 'R$: 12,00'
+    price: 'R$: 14,00'
   },
   {
     nome: 'CAIPIROSKA NAC',
-    price: 'R$: 16,00'
+    price: 'R$: 18,00'
   },
   {
     nome: 'CAIPIROSKA IMP',
-    price: 'R$: 20,00'
+    price: 'R$: 23,00'
   },
   {
     nome: 'CAIPIROSKA IMP MORANGO',
-    price: 'R$: 27,00'
+    price: 'R$: 30,00'
   },
   {
     nome: 'CAIPIROSKA NAC MORANGO',
-    price: 'R$: 23,00'
+    price: 'R$: 27,00'
   },
   {
     nome: 'CAIPIRINHA',
@@ -86,15 +86,15 @@ let bebidasJson = [
   },
   {
     nome: 'WISKY 8 ANOS (Red, Dose)',
-    price: 'R$: 20,00'
+    price: 'R$: 23,00'
   },
   {
     nome: 'WISKY 12 ANOS (Red, black, Dose)',
-    price: 'R$: 25,00'
+    price: 'R$: 30,00'
   },
   {
     nome: 'ABSOLUT',
-    price: 'R$: 18,00'
+    price: 'R$: 22,00'
   },
   {
     nome: 'ÁGUA DE COCO',
@@ -102,7 +102,7 @@ let bebidasJson = [
   },
   {
     nome: 'GARRAFA DE SAQUÊ',
-    price: 'R$: 110,00'
+    price: 'R$: 130,00'
   },
   {
     nome: 'CAIPIRINHA DE SAQUÊ',
