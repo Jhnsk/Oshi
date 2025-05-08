@@ -52,7 +52,7 @@ let entriesItem = [
   {
     nome: 'ROLINHO PRIMAVERA DE QUEIJO',
     desc: '',
-    price: 'R$: 15,00',
+    price: 'R$: 18,00',
     img: 'primaversQ.jpeg'
 },
   {
@@ -88,7 +88,19 @@ let entriesItem = [
   {
     nome: 'CAMARÃO EMPANADO ENROLADO NO SALMÃO',
     desc: '',
-    price: 'R$: 85,00',
+    price: 'R$: 95,00',
     img: 'Cenpanado.jpeg'
+  },
+  {
+    nome: 'Guioza',
+    desc: '',
+    price: 'R$ 20,00',
+    img: ''
+  },
+  {
+    nome: 'Shimeji',
+    desc: '',
+    price: 'R$ 43,00',
+    img: '',
   },
   ]
