@@ -20,13 +20,13 @@ let temakiJson = [
   {
     nome: 'TEMAKI SALMÃO PEPINO',
     desc: 'Opção Hot: ele frito, mais R$: 6,00',
-    price: 'R$: 38,00',
+    price: 'R$: 41,00',
     img: 'temakiSC.jpeg'
       },
   {
     nome: 'TEMAKI SALMÃO E CAMARÃO',
     desc: 'Opção Hot: ele frito, mais R$: 6,00',
-    price: 'R$: 45,00',
+    price: 'R$: 55,00',
     img: 'temakiCama.jpeg'
        },
   {
@@ -44,7 +44,7 @@ let temakiJson = [
   {
     nome: 'TEMAKI EBITEN',
     desc: 'Camarão Empanado',
-    price: 'R$: 52,00',
+    price: 'R$: 62,00',
     img: 'temakiEmpa.jpeg'
           },
   {
