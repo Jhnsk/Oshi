@@ -2,13 +2,13 @@ let sashimiJson = [
   {
     nome: 'SASHIMI SALMÃO',
     desc: '6 Unidades',
-    price: 'R$: 36,00',
+    price: 'R$: 43,00',
     img: 'sashimiS.jpeg'
    },
   {
     nome: 'SASHIMI ATUM',
     desc: '6 Unidades',
-    price: 'R$: 43,00',
+    price: 'R$: 45,00',
     img: 'sashimiA.jpeg'
     },
   {
